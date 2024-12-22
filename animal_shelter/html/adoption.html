@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Adopce - Úsměv Ocasem. Najděte svého nového zvířecího společníka. Prozkoumejte naše adoptovatelné psy a kočky a darujte jim nový domov.">
+        <meta name="keywords" content="Úsměv Ocasem, adopce zvířat, adoptovat psa, adoptovat kočku, útulek, zachráněná zvířata">
+        <meta name="author" content="mr.stranianek">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Adopce - Úsměv Ocasem | Najděte svého nového mazlíčka">
+        <meta property="og:description" content="Prozkoumejte naše adoptovatelné psy a kočky. Darujte domov zvířeti v nouzi a změňte život sobě i jemu.">
+        <meta property="og:image" content="https://www.usmevocasem.cz/img/adoption-image.jpg">
+        <meta property="og:url" content="https://www.usmevocasem.cz/adoption">
+        <meta property="og:type" content="website">
+        <link rel="canonical" href="https://www.usmevocasem.cz/adoption">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/adoption.css">
+        <link rel="stylesheet" href="../css/animal_shelter.css">
+        <link rel="icon" type="image/png" href="../img/logo.png">
+        <title>Adopce - Úsměv Ocasem | Najděte svého nového mazlíčka</title>
+    </head>
+    <body>
+        <header>
+            <section class="name">
+                <img src="../img/logo.png" alt="logo útulku">
+                <h1>Úsměv Ocasem</h1>
+            </section>
+            <button id="sidenavToggle" class="sidenav-toggle">☰</button>
+        
+            <nav id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../animal_shelter.html">Domů</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">O nás</a>
+                    <div class="dropdown-content">
+                        <a href="about_us.html">O nás</a>
+                        <a href="contact.html">Kontakt</a>
+                    </div>
+                </div>
+                <a href="adoption.html">Adopce</a>
+                <a href="voluntary_help.html">Dobrovolná pomoc</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Události</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="dog_activities.html">Akce s pejsky</a>
+                    </div>
+                </div>
+                <a href="donate.html" class="donatebtn">Přispět</a>
+            </nav>
+        </header>
+    
+    <main>
+        <main>
+            <section class="adoption-intro">
+                <h1>Adopce zvířete</h1>
+                <p>Děkujeme za váš zájem o adopci zvířete z našeho útulku. Vyplněním tohoto formuláře nám pomůžete najít pro vás ideálního mazlíčka.</p>
+            </section>
+    
+            <section class="adoption-form">
+                <h2>Adoptivní formulář</h2>
+                <form id="adoption-application" action="#" method="POST">
+                    <div class="form-group">
+                        <h3>Osobní informace</h3>
+                        <label for="full-name">Celé jméno:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+    
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="phone">Telefonní číslo:</label>
+                        <input type="tel" id="phone" name="phone" required>
+    
+                        <label for="address">Adresa:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <h3>Životní situace</h3>
+                        <label for="housing">Typ bydlení:</label>
+                        <select id="housing" name="housing" required>
+                            <option value="">Vyberte typ bydlení</option>
+                            <option value="apartment">Byt</option>
+                            <option value="house">Dům</option>
+                            <option value="other">Jiné</option>
+                        </select>
+    
+                        <label for="own-rent">Vlastní nebo pronájem:</label>
+                        <select id="own-rent" name="own-rent" required>
+                            <option value="">Vyberte možnost</option>
+                            <option value="own">Vlastní</option>
+                            <option value="rent">Pronájem</option>
+                        </select>
+    
+                        <label for="yard">Máte zahradu?</label>
+                        <input type="checkbox" id="yard" name="yard">
+    
+                        <label for="other-pets">Máte další domácí zvířata?</label>
+                        <input type="checkbox" id="other-pets" name="other-pets">
+                    </div>
+    
+                    <div class="form-group">
+                        <h3>Preference zvířete</h3>
+                        <label for="pet-type">Typ zvířete:</label>
+                        <select id="pet-type" name="pet-type" required>
+                            <option value="">Vyberte typ zvířete</option>
+                            <option value="dog">Pes</option>
+                        </select>
+    
+                        <label for="age-preference">Preferovaný věk:</label>
+                        <select id="age-preference" name="age-preference">
+                            <option value="">Vyberte věkovou kategorii</option>
+                            <option value="puppy-kitten">Štěně/kotě</option>
+                            <option value="young">Mladé</option>
+                            <option value="adult">Dospělé</option>
+                            <option value="senior">Senior</option>
+                        </select>
+    
+                        <label for="size-preference">Preferovaná velikost (pro psy):</label>
+                        <select id="size-preference" name="size-preference">
+                            <option value="">Vyberte velikost</option>
+                            <option value="small">Malý</option>
+                            <option value="medium">Střední</option>
+                            <option value="large">Velký</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="comments">Další komentáře nebo otázky:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Odeslat žádost</button>
+                </form>
+            </section>
+        </main>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>O nás</h3>
+                <ul>
+                    <li><a href="about_us.html">Naše mise</a></li>
+                    <li><a href="about_us.html#history">Historie</a></li>
+                    <li><a href="about_us.html#team">Tým</a></li>
+                    <li><a href="about_us.html#partners">Partneři</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Služby</h3>
+                <ul>
+                    <li><a href="adoption.html">Adopce</a></li>
+                    <li><a href="voluntary_help.html">Dobrovolnictví</a></li>
+                    <li><a href="donate.html">Dárcovství</a></li>
+                    <li><a href="blog.html">Vzdělávání</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>123 Ulice Zvířátek</p>
+                <p>Město, PSČ</p>
+                <p>Email: info@usmevocasem.cz</p>
+                <p>Tel: +420 123 456 789</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Sledujte nás</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="../img/Facebook_logo.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="../img/Instagram_logo.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="../img/github.png" alt="Github"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 mr.stranianek. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+    
+    <script src="../javascript/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kontakt - Úsměv Ocasem. Spojte se s námi pro více informací o adopci, dobrovolnictví nebo darování.">
+        <meta name="keywords" content="Úsměv Ocasem, kontakt, adopce zvířat, útulek, dobrovolnictví">
+        <meta name="author" content="mr.stranianek">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Kontakt - Úsměv Ocasem | Spojte se s námi">
+        <meta property="og:description" content="Máte dotazy ohledně adopce nebo chcete pomoci? Kontaktujte nás a my vám rádi pomůžeme.">
+        <meta property="og:image" content="https://www.usmevocasem.cz/img/contact-image.jpg">
+        <meta property="og:url" content="https://www.usmevocasem.cz/contact">
+        <meta property="og:type" content="website">
+        <link rel="canonical" href="https://www.usmevocasem.cz/contact">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/animal_shelter.css">
+        <link rel="icon" type="image/png" href="../img/logo.png">
+        <title>Kontakt - Úsměv Ocasem | Spojte se s námi</title>
+    </head>
+    <body>
+        <header>
+            <section class="name">
+                <img src="../img/logo.png" alt="logo útulku">
+                <h1>Úsměv Ocasem</h1>
+            </section>
+            <button id="sidenavToggle" class="sidenav-toggle">☰</button>
+        
+            <nav id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../animal_shelter.html">Domů</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">O nás</a>
+                    <div class="dropdown-content">
+                        <a href="about_us.html">O nás</a>
+                        <a href="contact.html">Kontakt</a>
+                    </div>
+                </div>
+                <a href="adoption.html">Adopce</a>
+                <a href="voluntary_help.html">Dobrovolná pomoc</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Události</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="dog_activities.html">Akce s pejsky</a>
+                    </div>
+                </div>
+                <a href="donate.html" class="donatebtn">Přispět</a>
+            </nav>
+        </header>
+    
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <div class="contact-info">
+                    <h2>Kontaktujte nás</h2>
+                    <h3>Kontaktní údaje</h3>
+                    <p><strong>Adresa:</strong> 123 Ulice Zvířátek, Město, PSČ</p>
+                    <p><strong>Telefon:</strong> +420 123 456 789</p>
+                    <p><strong>Email:</strong> info@usmevocasem.cz</p>
+                    <h3>Otevírací doba</h3>
+                    <p>Pondělí - Pátek: 9:00 - 17:00</p>
+                    <p>Sobota - Neděle: 10:00 - 15:00</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Napište nám</h3>
+                    <form action="#" method="POST">
+                        <label for="name">Jméno:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="subject">Předmět:</label>
+                        <input type="text" id="subject" name="subject" required>
+    
+                        <label for="message">Zpráva:</label>
+                        <textarea id="message" name="message" required></textarea>
+    
+                        <button type="submit" class="submit-btn">Odeslat zprávu</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <h2>Kde nás najdete</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7370117737493!2d14.4196342!3d50.0874654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8cf28b7fd%3A0x2600af105c408d30!2sVaclavske%20namesti%201%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto%2C%20Czechia!5e0!3m2!1sen!2sus!4v1652893681296!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>O nás</h3>
+                <ul>
+                    <li><a href="about_us.html">Naše mise</a></li>
+                    <li><a href="about_us.html#history">Historie</a></li>
+                    <li><a href="about_us.html#team">Tým</a></li>
+                    <li><a href="about_us.html#partners">Partneři</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Služby</h3>
+                <ul>
+                    <li><a href="adoption.html">Adopce</a></li>
+                    <li><a href="voluntary_help.html">Dobrovolnictví</a></li>
+                    <li><a href="donate.html">Dárcovství</a></li>
+                    <li><a href="blog.html">Vzdělávání</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>123 Ulice Zvířátek</p>
+                <p>Město, PSČ</p>
+                <p>Email: info@usmevocasem.cz</p>
+                <p>Tel: +420 123 456 789</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Sledujte nás</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="../img/Facebook_logo.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="../img/Instagram_logo.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="../img/github.png" alt="Github"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 mr.stranianek. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+    
+    <script src="../javascript/animal_shelter.js"></script>
+    <script src="../javascript/menu.js"></script>
+    </body>
+</html>

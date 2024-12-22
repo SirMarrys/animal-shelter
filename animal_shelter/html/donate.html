@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Přispějte útulku Úsměv Ocasem a pomozte nám zachraňovat a pečovat o opuštěná zvířata.">
+        <meta name="keywords" content="Úsměv Ocasem, dárcovství, příspěvek, pomoc zvířatům, útulek">
+        <meta name="author" content="mr.stranianek">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Přispějte - Úsměv Ocasem | Pomozte nám zachraňovat zvířata">
+        <meta property="og:description" content="Vaše dary pomáhají zachraňovat životy. Přispějte útulku Úsměv Ocasem a buďte součástí naší mise.">
+        <meta property="og:image" content="https://www.usmevocasem.cz/img/donate-cover.jpg">
+        <meta property="og:url" content="https://www.usmevocasem.cz/donate">
+        <meta property="og:type" content="website">
+        <link rel="canonical" href="https://www.usmevocasem.cz/donate">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/donate.css">
+        <link rel="stylesheet" href="../css/animal_shelter.css">
+        <link rel="icon" type="image/png" href="../img/logo.png">
+        <title>Přispějte - Úsměv Ocasem | Pomozte nám zachraňovat zvířata</title>
+    </head>
+    <body>
+        <header>
+            <section class="name">
+                <img src="../img/logo.png" alt="logo útulku">
+                <h1>Úsměv Ocasem</h1>
+            </section>
+            <button id="sidenavToggle" class="sidenav-toggle">☰</button>
+        
+            <nav id="sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../animal_shelter.html">Domů</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">O nás</a>
+                    <div class="dropdown-content">
+                        <a href="about_us.html">O nás</a>
+                        <a href="contact.html">Kontakt</a>
+                    </div>
+                </div>
+                <a href="adoption.html">Adopce</a>
+                <a href="voluntary_help.html">Dobrovolná pomoc</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Události</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="dog_activities.html">Akce s pejsky</a>
+                    </div>
+                </div>
+                <a href="donate.html" class="donatebtn">Přispět</a>
+            </nav>
+        </header>
+
+    <main>
+        <section class="donate-hero">
+            <h2>Přispějte na dobrou věc</h2>
+            <p>Vaše podpora pomáhá zachraňovat životy a pečovat o opuštěná zvířata</p>
+        </section>
+
+        <section class="donation-options">
+            <h3>Způsoby, jak můžete přispět</h3>
+            <div class="donation-types">
+                <div class="donation-type">
+                    <h4>Jednorázový dar</h4>
+                    <p>Přispějte libovolnou částkou na podporu našeho útulku</p>
+                    <button class="donate-button">Přispět jednorázově</button>
+                </div>
+                <div class="donation-type">
+                    <h4>Pravidelný dar</h4>
+                    <p>Staňte se pravidelným dárcem a pomáhejte dlouhodobě</p>
+                    <button class="donate-button">Přispívat pravidelně</button>
+                </div>
+                <div class="donation-type">
+                    <h4>Materiální pomoc</h4>
+                    <p>Darujte krmivo, deky, hračky a další potřeby pro zvířata</p>
+                    <a href="#material-donations" class="donate-button">Více informací</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-form">
+            <h3>Přispějte online</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="amount">Částka (Kč):</label>
+                    <input type="number" id="amount" name="amount" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Jméno:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Způsob platby:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">Vyberte způsob platby</option>
+                        <option value="card">Platební karta</option>
+                        <option value="bank-transfer">Bankovní převod</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                <button type="submit" class="donate-submit">Odeslat dar</button>
+            </form>
+        </section>
+
+        <section class="material-donations" id="material-donations">
+            <h3>Materiální pomoc</h3>
+            <div class="material-donations-content">
+                <div class="material-list">
+                    <h4>Co můžete darovat:</h4>
+                    <ul>
+                        <li>Krmivo pro psy a kočky</li>
+                        <li>Deky a ručníky</li>
+                        <li>Hračky pro zvířata</li>
+                        <li>Vodítka a obojky</li>
+                        <li>Čisticí prostředky</li>
+                        <li>Misky na vodu a krmivo</li>
+                    </ul>
+                </div>
+                <div class="donation-info">
+                    <p>Vaše materiální dary jsou pro nás nesmírně cenné. Pomáhají nám zajistit každodenní péči o naše svěřence a vytvářet jim pohodlné prostředí.</p>
+                    <p>Pokud máte něco, co byste chtěli darovat, neváhejte nás kontaktovat nebo přinést dary přímo do našeho útulku.</p>
+                    <div class="donation-cta">
+                        <h4>Chcete nám něco darovat?</h4>
+                        <a href="contact.html" class="donate-button">Kontaktujte nás</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="donation-impact">
+            <h3>Jak vaše dary pomáhají</h3>
+            <div class="impact-stats">
+                <div class="stat">
+                    <h4>500+</h4>
+                    <p>Zachráněných zvířat ročně</p>
+                </div>
+                <div class="stat">
+                    <h4>1000+</h4>
+                    <p>Veterinárních ošetření</p>
+                </div>
+                <div class="stat">
+                    <h4>300+</h4>
+                    <p>Úspěšných adopcí</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>O nás</h3>
+                <ul>
+                    <li><a href="about_us.html">Naše mise</a></li>
+                    <li><a href="about_us.html#history">Historie</a></li>
+                    <li><a href="about_us.html#team">Tým</a></li>
+                    <li><a href="about_us.html#partners">Partneři</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Služby</h3>
+                <ul>
+                    <li><a href="adoption.html">Adopce</a></li>
+                    <li><a href="voluntary_help.html">Dobrovolnictví</a></li>
+                    <li><a href="donate.html">Dárcovství</a></li>
+                    <li><a href="blog.html">Vzdělávání</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>123 Ulice Zvířátek</p>
+                <p>Město, PSČ</p>
+                <p>Email: info@usmevocasem.cz</p>
+                <p>Tel: +420 123 456 789</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Sledujte nás</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="../img/Facebook_logo.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="../img/Instagram_logo.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="../img/github.png" alt="Github"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 mr.stranianek. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+    <script src="../javascript/animal_shelter.js"></script>
+    <script src="../javascript/menu.js"></script>
+    </body>
+</html>
